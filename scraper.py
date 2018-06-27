@@ -10,5 +10,5 @@ page = urlopen(web_page)
 print(page)
 soup = BeautifulSoup(page, 'html.parser')
 
-for elem in soup(text=re.compile(r'Preston')):
+for elem in soup(text=re.compile(r'Preston and')):
     print(elem)
